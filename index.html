@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smart Income BD</title>
+<style>
+body{font-family:Arial,sans-serif;background:#f1f5f9;margin:0;color:#172033}
+header{background:#102b50;color:white;text-align:center;padding:24px}
+header h1{color:#55e6a5}
+main{max-width:450px;margin:20px auto;padding:12px}
+.card{background:white;padding:18px;border-radius:14px;margin-bottom:15px}
+.balance{font-size:30px;color:#087b53;font-weight:bold}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+button{background:#087b53;color:white;border:0;border-radius:8px;padding:14px;font-size:17px}
+.note{font-size:13px;color:#64748b;line-height:1.6}
+</style>
+</head>
+<body>
+<header>
+<h1>Smart Income BD</h1>
+<p>স্বাগতম</p>
+</header>
+<main>
+<div class="card">
+<h3>ডেমো ব্যালেন্স</h3>
+<div class="balance">৳0.00</div>
+<p class="note">এটি পরীক্ষামূলক ব্যালেন্স, আসল টাকা নয়।</p>
+</div>
+<div class="card">
+<h3>ডিপোজিট নির্বাচন</h3>
+<div class="grid">
+<button onclick="pick(50)">৳৫০</button>
+<button onclick="pick(100)">৳১০০</button>
+<button onclick="pick(200)">৳২০০</button>
+<button onclick="pick(500)">৳৫০০</button>
+</div>
+<p id="msg" class="note"></p>
+</div>
+<div class="card">
+<h3>রেফারেল</h3>
+<p>ডেমো কোড: SMART123</p>
+<p class="note">আসল রেফারেল ব্যবস্থা এখনো চালু নয়।</p>
+</div>
+<div class="card">
+<h3>পেমেন্ট পদ্ধতি</h3>
+<p>বিকাশ / নগদ</p>
+<p class="note">এখনো কোনো বাস্তব পেমেন্ট সংযুক্ত নেই।</p>
+</div>
+</main>
+<script>
+function pick(n){
+document.getElementById('msg').textContent=
+'৳'+n+' ডেমো নির্বাচন করা হয়েছে। কোনো টাকা পাঠানো হয়নি।';
+}
+</script>
+</body>
+</html>
